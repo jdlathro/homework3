@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Homework3</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+<div id="header">
+<strong><p style = "font-size:28px;"> Appointment Manager</p></strong> 
+<%= link_to 'Physicians', physicians_path%>
+<%= link_to 'Appointments', appointments_path%>
+<%= link_to 'Patients', patients_path%>
+
+</div>
+  <body>
+    <%= yield %>
+  </body>
+</html>
