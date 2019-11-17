@@ -2,7 +2,7 @@
 
 <p>
   <strong>Visit:</strong>
-  <%= @appointment.visit %>
+  <%= @appointment.visit.to_formatted_s(:long_ordinal) %>
 </p>
 
 <p>
